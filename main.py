@@ -58,8 +58,8 @@ def game_switch():
             score.game_over()
             stop_song()
 
-        for segment in snake.segments[1:]:  # Mom!!!! I know slIC    iNg!!!!
-            if snake.head.distance(segment) < 10:
+        for segment in snake.segments[2:]:  # Mom!!!! I know slIC    iNg!!!!
+            if snake.head.distance(segment) < 1:
                 alive = False  # Just fucking die, mate!
                 score.game_over()
                 stop_song()

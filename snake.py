@@ -30,7 +30,8 @@ class Snake:
             self.add_segment(position)
 
     def add_segment(self, position):
-        """No idea what segment mean. If you know comment it here, then push a commit."""
+        """No idea what segment mean. If you know comment it here, then push a commit.
+        Yes on google drive."""
         new_segment = Turtle("square")
         new_segment.color("white")
         new_segment.penup()
