@@ -17,7 +17,8 @@ sudo pacman -S sox tk : arch'''
 # "he gotta be kidding tho.. OMG if he isn't, then I'mma kill myself", news reporter.
 
 opsys = platform.system()
-if opsys == 'Windows':  # Best OS.
+windowz = 'Windows'
+if opsys == windowz:  # Best OS.
     import winsound
 
 screen = Screen()
@@ -52,7 +53,7 @@ def game_switch():
             score.add()
         # detect collision with the wall
         if snake.head.xcor() > 300 or snake.head.xcor() < -300 or snake.head.ycor() > 300 or snake.head.ycor() < -300:
-            # the above line is a one-time code. You write it.. And never try to look at it again.
+            # the above line is a one-time code. You write it.. And never try to read at it again.
             alive = False  # RIP
             score.game_over()
             stop_song()
@@ -70,9 +71,9 @@ def play_song():
     random_second_digit = str(random.randint(0, 9))
     random_number = int(random_first_digit + random_second_digit)
     # and just like that we've got a number from 01 to 19.
-    # f"{Science} bitch!"  # Science = "Math"  # don't forget bitch.
+    # f"{Science} bitch!"  # Science = "Math"
 
-    if opsys == 'Windows':  # You be-ir install linux... Just saying.
+    if opsys == windowz:  # You be-ir install linux... Just saying.
         winsound.PlaySound(f'Adele\\{random_number}*', winsound.SND_ASYNC)
     else:
         os.system(f'play Adele/{random_number}* &')
@@ -81,7 +82,7 @@ def play_song():
 
 def stop_song():
     """Doesn't matter... Adele will sue you either way."""
-    if opsys == 'Windows':  # For real tho, just install the damn thing!
+    if opsys == windowz:  # For real tho, just install the damn thing!
         winsound.PlaySound(None, winsound.SND_PURGE)
     else:
         os.system('killall play')

@@ -2,7 +2,7 @@ from turtle import Turtle
 
 
 class Scoreboard(Turtle):
-    """A gigantic diamond masterpiece scoreboard,
+    """A gigantic diamond masterpiece scoreboard, used to display the score in the Sumerian olympic finals of 3000 B.C.,
     only god knows what it took me to get it in this game."""
     def __init__(self):
         super(Scoreboard, self).__init__()
@@ -28,8 +28,8 @@ class Scoreboard(Turtle):
         """helpful tip: (like really helpful.)
         to stop the song hit 'm' as in Mutant.
         to play a new song hit 'Enter' as in Interception But with E instead of the I.
-        spam 'Return' as in "Costa-Rica"[6] to piss your neighbours out.
-        Hit 'm' ASSuckingP if your neighbour came to... you know..."""
+        spam 'Return' aka 'Enter' to piss your neighbours out.
+        Hit 'm' ASAfuckingP if your neighbour came to... you know..."""
         self.goto(0, 0)
         self.write('GAME OVER', False, 'center', ('Courier', 24, 'normal'))
         self.goto(0, -40)
@@ -39,7 +39,7 @@ class Scoreboard(Turtle):
 
 
 class Welcome(Turtle):
-    """Like what stronghold crusader's deep voiced voice actor says sometime.
+    """Like what stronghold crusader's deep voiced voice actor says sometimes.
     Or in windowz welcome screen. LMFAOOAOFISJFSIDJ.. ehm.."""
 
     def __init__(self):
@@ -51,6 +51,6 @@ class Welcome(Turtle):
 
     def start_game(self):
         """It doesn't actually start anything,
-        just clears the screen and waits for other functions to do the real job.
+        just clears the screen and waits for the other functions to do the real job.
         reminds me of my future co-workers."""
         self.clear()
